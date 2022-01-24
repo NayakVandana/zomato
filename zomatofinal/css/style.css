@@ -79,18 +79,38 @@ nav ul li a
   
    
 }
+.popup-content i{
+   padding: 5px 6px;
+   
+}
 .close{
     position: absolute;
-    top: 2px;
-    right: 0px;
-    background: white;
-    height: 20px;
-    width: 20px;
+    top: -15px;
+    right: -10px;
+    background: black;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     box-shadow: 6px 6px 29px -4px black;
     cursor: pointer;
     
 }
+
+#section2 .button{
+    background:rgba(0, 0, 0, 0.897);
+    padding: 10px 15px;
+    color: rgba(255, 255, 255, 0.746);
+ 
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 29px -4px black;
+    margin-top: 25px;
+    text-decoration: none;
+    transition: 0.4s;
+
+}
+
 
 /* section2 start */
 #section2 
