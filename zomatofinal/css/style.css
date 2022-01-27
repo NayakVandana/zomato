@@ -44,21 +44,104 @@ nav ul li a
     text-decoration: none;
     font-weight: 600;
 }
+/* body load popup start */
 
+.bg-model
+{
+    width : 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.473);
+    position: absolute;
+    top:0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: display 1s;
+}
+.bg-model.active
+{
+    display: flex;
+}
+.model-content
+{
+    width: 50vw;
+    height:460px;
+    background-color: black;
+    position: relative;
+}
 
+.model-content span
+{
+    color:white;
+    font-size: 20px;
+    position: absolute;
+    top:20px;
+    right:20px;
+    cursor: pointer;
+}
+.model-content .content
+{
+   padding: 20px;
+}
+.model-content h2
+{
+    font-size: 60px;
+    font-weight: 700;
+    color:#DAAD01;
+    padding-top: 30px;
 
+}
+.model-content h3
+{
+    font-size: 30px;
+    color:white;
+    padding:10px 0px;
+    
+}
+.model-content p 
+{
+    font-size: 20px;
+    color:white;
+    font-weight: 200;
 
-
+}
+.model-content a 
+{
+    display: inline-block;
+    background-color: #DAAD01;
+    padding:10px 20px;
+    color:white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+/* SignIn popup start */
 .popup{
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top:0;
     display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+ .popup .singbtnn{
+ 
+   display: inline-block;
+    color: rgba(0, 0, 0, 0.89);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 100%;
+
+    margin-top: 5px;
+    text-decoration: none;
+   
+
+}
+.popup.active{
+display: flex;
 }
 
 .popup-content{
@@ -73,46 +156,56 @@ nav ul li a
 .popup-content input{
     margin: 20px auto;
     display:block;
-    width: 50%;
+    width: 80%;
     padding: 8px;
     border: 1px solid black;
-       
+     outline: none;  
 }
 
 
 .popup-content i{
-   padding: 5px 6px;
-   
-}
-.close{
-    position: absolute;
-    top: -15px;
-    right: -10px;
-    background: black;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    box-shadow: 6px 6px 29px -4px black;
-    cursor: pointer;
+    padding: 5px 6px;
     
-}
-
-#section2 .button{
-    background:rgba(0, 0, 0, 0.89);
-    padding: 10px 15px;
-    color: rgba(255, 255, 255, 0.746);
+ }
+ .close{
+     position: absolute;
+     top: -15px;
+     right: -10px;
+     background: black;
+     height: 25px;
+     width: 25px;
+     border-radius: 50%;
+     box-shadow: 6px 6px 29px -4px black;
+     cursor: pointer;
+     
+ }
  
-    text-transform: uppercase;
-    font-size: 16px;
-    border-radius: 5px;
-    box-shadow: 6px 6px 29px -4px black;
-    margin-top: 25px;
-    text-decoration: none;
-    transition: 0.4s;
+ .buttonl{
+     background:rgba(0, 0, 0, 0.89);
+     padding: 10px 15px;
+     color: rgba(255, 255, 255, 0.746);
+  
+     text-transform: uppercase;
+     font-size: 16px;
+     border-radius: 5px;
+     box-shadow: 6px 6px 29px -4px black;
+     margin-top: 25px;
+     text-decoration: none;
+     transition: 0.4s;
+ 
+ }
+ /* Dark Mode start */
+ .myDark
+ {
+     background-color: black;
+     color: rgba(255, 255, 255, 0.76) ;
+     
+ }
 
+ #mode
+{
+    cursor: pointer;
 }
-
-
 /* section2 start */
 #section2 
 {
@@ -218,7 +311,7 @@ optgroup{
     font-weight: 400;
    
     text-decoration: none;
-    color:black;
+    color:rgba(95, 93, 93, 0.993);
 }
 #section3 .box
 {
